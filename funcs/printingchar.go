@@ -15,7 +15,7 @@ func Printingchar(r rune, file *os.File) []string {
 	_, err := file.Seek(0, 0)
 	if err != nil {
 		fmt.Println("error: ", err)
-		os.Exit(4)
+		os.Exit(10)
 	}
 	// Create a scanner to read the file line by line
 	scanner := bufio.NewScanner(file)
