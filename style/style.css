@@ -1,0 +1,21 @@
+*{
+    background-color: aqua;
+    text-align:center;
+
+}
+h1{
+    font-style: unset;
+}
+hr {
+    height: 4px;
+    background-color: rgb(0, 17, 255);
+    border-color: rgb(0, 17, 255);
+}
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-buttons label {
+    margin-bottom: 100000px; /* Espacement entre chaque bouton */
+}

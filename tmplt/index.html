@@ -2,13 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>asci-art-web</title>
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <style>
+        .radio-buttons label {
+            display: inline-block;
+            margin-right: 20px; /* Espacement entre chaque bouton */
+        }
+    </style>
+
 </head>
+
 <body>
+    <div class="menu"> 
     <main>
-        <h1>asci-art-web</h1>
+        <h1>ascii-art-web</h1>
+        <hr>
         <form method="post" action="/ascii-art">
-        <textarea name="user_input" placeholder="put something"  maxlength="1000" required=""></textarea>
+        <textarea name="user_input" placeholder="put something"  maxlength="1000" required="" class="entrer"></textarea>
         
         <fieldset>
             <legend><h2>chose a style </h2></legend>
@@ -22,6 +34,7 @@
    <pre>
     {{.}}</pre>
 <footer><p>NO-Copyright</p></footer>
+</div>
 
 </body>
 </html>
