@@ -41,5 +41,13 @@ footer {
 textarea::placeholder {
     text-align: center;
 }
+pre {
+    border: 10px blue solid;
+    overflow: auto;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 100px;
+    padding-bottom:100px;
+}
 
 
