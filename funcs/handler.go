@@ -6,7 +6,6 @@ import (
 )
 
 func Handler_rout(w http.ResponseWriter, r *http.Request) {
-	
 	if r.URL.Path != "/" { // handel if url was not valide
 		http.Error(w, "page not found :)", http.StatusNotFound)
 		return
@@ -30,7 +29,7 @@ func Handler_asci_art(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tmpl, err := template.ParseFiles("tmplt/index.html")
+	tmpl, err := template.ParseFiles("tmplt/my.html")
 	if err != nil {
 		http.Error(w, "internal server error 500", http.StatusInternalServerError)
 	}
